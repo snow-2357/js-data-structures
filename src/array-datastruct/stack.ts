@@ -27,8 +27,12 @@ class Stack<T> {
     return this.items.length === 0;
   }
 
+  clean(): void {
+    this.items = [];
+  }
+
   printStack(): string {
-    return this.items.join(" ");
+    return this.items.join(", ");
   }
 }
 
