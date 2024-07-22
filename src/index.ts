@@ -1,9 +1,11 @@
-console.log("hey");
-import Queue from "./array-datastruct/queue";
+import Stack from "./array-datastruct/stack";
 
-let queue = new Queue<number>();
-queue.enqueue(1);
-queue.enqueue(2);
-queue.enqueue(3);
-queue.dequeue();
-console.log(queue.printQueue());
+const stack = new Stack<string>();
+
+stack.push("apple");
+stack.push("banana");
+// stack.push(1);
+stack.clean();
+
+const str = stack.printStack();
+console.log(str.length);
