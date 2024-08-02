@@ -19,6 +19,10 @@ class Queue<T> {
     this.head = null;
     this.tail = null;
   }
+  peek(): T | undefined {
+    if (this.head) return this.head.value;
+    return;
+  }
   enqueue(value: T): void {
     const newNode = new Node(value);
 
